@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ITS NU Pekalongan</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<link href="img/favicon.ico" rel="icon"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="lib/animate/animate.min.css" rel="stylesheet"/>
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+      .custom-textarea {
+        height: 300px; 
+        resize: vertical; 
+      }
+      .img {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu-pendaftaran {
+        background-color: #4CAF50; /* Warna hijau */
+        color: #fff; /* Warna teks putih */
+        padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
+        border-radius: 4px; /* Membuat tombol lebih bulat */
+      }
+      .menu-pendaftaran:hover {
+        background-color: #45a049; /* Warna latar belakang yang berbeda saat digulirkan */
+      }
+	  .preview-container {
+    display: flex;
+    align-items: center;
+}
+
+.preview-label {
+    margin-right:20px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+	<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
+</div>
+<div class="container-fluid bg-white sticky-top">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+		<a href="index.html" class="navbar-brand"><img class="img-fluid" src="img/logo.png" alt="Logo"/></a>
+		<button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-nav ms-auto">
+			<a href="index.html" class="nav-item nav-link ">Home</a>
+			<a href="tentang.html" class="nav-item nav-link">Tentang</a>
+			<a href="dosen.html" class="nav-item nav-link">Dosen</a>
+			<a href="visi-misi.html" class="nav-item nav-link">Visi Misi</a>
+			<a href="kontak.html" class="nav-item nav-link">Kontak</a>
+		</div>
+		<div class="border-start ps-4 d-none d-lg-block">
+			<a href="formulir.html" class="nav-item nav-link menu-pendaftaran" style="color: rgb(12, 80, 13);"><b>PENDAFTARAN</b></a>
+		</div>
+	</div>
+	</nav>
+</div>
+</div>
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container text-center py-5">
+	<h1 class="display-2 text-dark mb-4 animated slideInDown">Formulir Pendaftaran</h1>
+	<nav aria-label="breadcrumb animated slideInDown">
+	<ol class="breadcrumb justify-content-center mb-0">
+		<li class="breadcrumb-item">
+			<a href="#">Its</a>
+		</li>
+		<li class="breadcrumb-item">
+			<a href="index.html">Home</a>
+		</li>
+		<li class="breadcrumb-item">
+			<a href="formulir.html">Pendaftaran</a>
+		</li>
+	</ol>
+	</nav>
+</div>
+</div>
+<div class="container mt-5">
+<div class="row justify-content-center">
+	<div class="col-lg-8">
+		<div class="card p-4">
+			<div class="img">
+				<img src="img/logo-itsnu.png" alt="" srcset="" width="30%"/>
+			</div>
+			<h2 class="text-center">Data Diri Mahasiswa</h2>
+			<br/>
+			<form action="#" method="post" onsubmit="return checkForm(this);">
+
+				<div class="mb-3">
+					<label for="nama" class="form-label">Nama Lengkap:</label>
+					<input type="text" class="form-control" placeholder="Masukkan Nama Lengkap" id="nama" name="nama" required />
+				</div>
+				<div class="mb-3">
+					<label for="jenis-kelamin" class="form-label">Jenis Kelamin:</label>
+					<div class="row">
+						<div class="col-auto">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="jenis_kelamin" id="laki-laki" value="laki-laki" required />
+								<label class="form-check-label" for="laki-laki">Laki-laki</label>
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="jenis_kelamin" id="perempuan" value="perempuan" required />
+								<label class="form-check-label" for="perempuan">Perempuan</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="alamat" class="form-label">Alamat:</label>
+					<textarea class="form-control" id="alamat" placeholder="Masukkan Alamat Lengkap" name="alamat" required></textarea>
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email:</label>
+					<input type="email" class="form-control" placeholder="Masukkan Email" id="email" name="email" required />
+				</div>
+				<div class="mb-3">
+					<label for="no-hp" class="form-label">No HP:</label>
+					<input type="number" class="form-control" id="no-hp" placeholder="Masukkan No HP" name="no_hp" required inputmode="numeric" />
+				</div>
+				<div class="mb-3">
+					<label for "kode-pos" class="form-label">Kode POS:</label>
+					<input type="number" class="form-control" id="kode-pos" placeholder="Masukkan Kode POS" name="kode_pos" required inputmode="numeric" />
+				</div>
+				
+				
+				<div class="mb-3">
+					<label for="agama" class="form-label">Agama:</label>
+					<select class="form-select" id="agama" name="agama" required>
+						<option value="" selected disabled>Pilih Agama Anda</option>
+						<option value="Islam">Islam</option>
+						<option value="Kristen">Kristen</option>
+						<option value="Hindu">Hindu</option>
+						<option value="Buddha">Buddha</option>
+						<option value="Konghucu">Konghucu</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label for="foto" class="form-label">Unggah Foto:</label>
+					<input type="file" class="form-control" id="foto" name="foto" accept="image/*" required />
+					<div class="preview-container"><br><br>
+						<span class="preview-label">Preview :</span>
+						<img id="image-preview" src="" alt="Preview" style="max-width: 550px; max-height: 550px; margin-top: 10px; display: none;" />
+					</div>
+				</div>
+				
+				
+				<br><br>
+				<div class="mb-3">
+					<h2 class="text-center">Data Diri Orang Tua</h2>
+				</div>
+				<div class="mb-3">
+					<label for="nama-ayah" class="form-label">Nama Ayah:</label>
+					<input type="text" class="form-control" id="nama-ayah" placeholder="Masukkan Nama Ayah" name="nama-ayah" required/>
+				</div>
+				<div class="mb-3">
+					<label for="pekerjaan-ayah" class="form-label">Pekerjaan Ayah:</label>
+					<input type="text" class="form-control" id="pekerjaan-ayah" placeholder="Masukkan Pekerjaan Ayah" name="pekerjaan-ayah" required/>
+				</div>
+				<div class="mb-3">
+					<label for="penghasilan-ayah" class="form-label">Penghasilan Ayah:</label>
+					<input type="text" class="form-control" id="penghasilan-ayah" placeholder="Masukkan Penghasilan Ayah" name="penghasilan-ayah" oninput="formatPenghasilan(this)" required/>
+				</div>
+				<div class="mb-3">
+					<label for="nama-ayah" class="form-label">Nama Ibu:</label>
+					<input type="text" class="form-control" id="nama-ibu" placeholder="Masukkan Nama Ibu" name="nama-ibu" required/>
+				</div>
+				<div class="mb-3">
+					<label for="pekerjaan-ibu" class="form-label">Pekerjaan Ibu:</label>
+					<input type="text" class="form-control" id="pekerjaan-ibu" placeholder="Masukkan Pekerjaan Ibu" name="pekerjaan-ibu" required/>
+				</div>
+				<div class="mb-3">
+					<label for="penghasilan-ibu" class="form-label">Penghasilan Ibu:</label>
+					<input type="text" class="form-control" id="penghasilan-ibu" placeholder="Masukkan Penghasilan Ibu" name="penghasilan-ibu" oninput="formatPenghasilan(this)" required/>
+				</div>
+				<div class="text-center">
+					<button type="submit" class="btn btn-primary" id="daftarBtn">Daftar</button>
+				</div>
+			
+				<div id="notif-daftar" class="mt-3 alert alert-success text-center" style="display: none;">
+					Pendaftaran Anda sukses dan akan segera diproses. Mohon untuk menunggu informasi selanjutnya. Terima kasih.
+				</div>
+			
+				<div id="error-message" class="mt-3 alert alert-danger text-center" style="display: none;">
+					Ada field yang belum diisi atau diisi tidak sesuai, mohon periksa kembali formulir.
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container py-5">
+	<div class="row g-5">
+		<div class="col-lg-3 col-md-6">
+			<img src="img/its1.png" alt="" srcset="" width="100%"/>
+		</div>
+		<div class="col-lg-3 col-md-6">
+			<h4 class="text-primary mb-4">Kantor Kami</h4>
+			<p class="mb-2">
+				<i class="fa fa-map-marker-alt text-primary me-3"></i>Jl. Karangdowo No.9, Karangdowo, Kec. Kedungwuni, Pekalongan, Jawa Tengah 51173
+			</p>
+			<p class="mb-2">
+				<i class="fa fa-phone-alt text-primary me-3"></i>0821 3859 7168
+			</p>
+			<p class="mb-2">
+				<i class="fa fa-envelope text-primary me-3"></i>info@itsnupekalongan.ac.id​
+			</p>
+			<div class="d-flex pt-3">
+				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/ITSNUPEKAL0NGAN/"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.youtube.com/@ITSNUPekalongan"><i class="fab fa-youtube"></i></a>
+				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.instagram.com/itsnupekalongan/"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-6">
+			<h4 class="text-primary mb-4">Quick Links</h4>
+			<a class="btn btn-link" href="index.html">Home</a>
+			<a class="btn btn-link" href="tentang.html">Tentang</a>
+			<a class="btn btn-link" href="dosen.html">Dosen</a>
+			<a class="btn btn-link" href="visi-misi.html">Visi Misi</a>
+			<a class="btn btn-link" href="kontak.html">Kontak</a>
+		</div>
+		<div class="col-lg-3 col-md-6">
+			<h4 class="text-primary mb-4">Maps</h4>
+			<div class="col-lg-3 col-md-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.647043152012!2d109.629498216333!3d-6.960657799042879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1696738395110!5m2!1sid!2sid" width="400" height="200" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				</iframe>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    function checkForm(form) {
+        // Check if required fields are empty
+        var requiredFields = form.querySelectorAll("[required]");
+
+        for (var i = 0; i < requiredFields.length; i++) {
+            if (requiredFields[i].value.trim() === "") {
+                alert("Ada field yang belum diisi atau diisi tidak sesuai, mohon periksa kembali formulir.");
+                return false; // Prevent form submission
+            }
+        }
+
+        // If all required fields are filled, show the success alert
+        var notifDaftar = document.getElementById("notif-daftar");
+        notifDaftar.style.display = "block";
+
+        // You can optionally hide the submit button or reset the form
+        // form.querySelector("#daftarBtn").style.display = "none";
+        // form.reset();
+
+        return false; // Prevent the form from actually submitting
+    }
+</script>
+<script>
+		function formatPenghasilan(input) {
+			// Menghapus tanda titik dan koma sebelum melakukan pemformatan
+			var value = input.value.replace(/[\.,]/g, '');
+	
+			// Menghapus karakter non-angka
+			value = value.replace(/\D/g, '');
+	
+			// Menggunakan Number() untuk mengkonversi nilai ke tipe data angka
+			var numberValue = Number(value);
+	
+			// Memeriksa apakah angka adalah angka valid
+			if (!isNaN(numberValue)) {
+				// Menggunakan toLocaleString() untuk memformat angka dengan tanda titik sebagai ribuan, ratusan ribu, jutaan, dll.
+				var formattedValue = numberValue.toLocaleString();
+	
+				// Menambahkan awalan 'Rp. ' ke nilai yang diformat
+				formattedValue = 'Rp. ' + formattedValue;
+	
+				// Memasukkan nilai yang diformat kembali ke input
+				input.value = formattedValue;
+			}
+		}
+	</script>
+		<script>
+			// Fungsi untuk menampilkan pratinjau gambar saat ada perubahan pada input file
+			function showImagePreview(input) {
+				var fileInput = input;
+				var imagePreview = document.getElementById('image-preview');
+		
+				if (fileInput.files && fileInput.files[0]) {
+					var reader = new FileReader();
+		
+					reader.onload = function (e) {
+						imagePreview.src = e.target.result;
+						imagePreview.style.display = 'block'; // Menampilkan pratinjau gambar
+					};
+		
+					reader.readAsDataURL(fileInput.files[0]);
+				}
+			}
+		
+			// Memanggil fungsi showImagePreview saat ada perubahan pada input file
+			document.getElementById('foto').addEventListener('change', function () {
+				showImagePreview(this);
+			});
+		</script>
+		<script>
+			document.addEventListener("input", function (e) {
+				if (e.target.tagName === "INPUT" && e.target.type === "number") {
+					// Periksa apakah input mengandung huruf "e" dan hapus jika ditemukan
+					e.target.value = e.target.value.replace(/e/g, "");
+				}
+			});
+		</script>
+		
+<script src="js/main.js"></script>
+</body>
+</html>
