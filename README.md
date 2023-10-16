@@ -13,5 +13,6 @@ Perbaikan hasil pekerjaan Tugas Web 1, dan sudah ditambahkan beberapa menu sebag
 - Jenis kelamin
 - Agama
 
-
 2. Semua menu navbar sudah bisa nge-link dan dibuat halaman baru
+
+3. menambahkan field baru pada menu pendaftaran dengan code javascript untuk memasukkan nomor pada kolom penghasilan dan akanotomatis menggunakan titik ribuan
