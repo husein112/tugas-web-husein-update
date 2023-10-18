@@ -1,160 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>ITS NU Pekalongan</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="" name="keywords"/>
-<meta content="" name="description"/>
-<link href="img/favicon.ico" rel="icon"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="lib/animate/animate.min.css" rel="stylesheet"/>
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
-<link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/style.css" rel="stylesheet"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <title>ITS NU Pekalongan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link href="img/favicon.ico" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
 
-<style>
-        .menu-pendaftaran {
-          background-color: #4CAF50; /* Warna hijau */
-          color: #fff; /* Warna teks putih */
-          padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
-          border-radius: 4px; /* Membuat tombol lebih bulat */
+    <style>
+      .menu-pendaftaran {
+        background-color: #4caf50; /* Warna hijau */
+        color: #fff; /* Warna teks putih */
+        padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
+        border-radius: 4px; /* Membuat tombol lebih bulat */
+      }
+      .menu-pendaftaran1 {
+        background-color: #4caf50; /* Warna hijau */
+        color: #fff; /* Warna teks putih */
+        padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
+        border-radius: 4px; /* Membuat tombol lebih bulat */
+      }
+      /* Sembunyikan tautan PENDAFTARAN pada mode desktop (lebar layar > 992px) */
+      @media (min-width: 992px) {
+        .menu-pendaftaran1 {
+          display: none;
         }
-        .menu-pendaftaran:hover {
-          background-color: #45a049; /* Warna latar belakang yang berbeda saat digulirkan */
-        }
-</style>
-</head>
-<body>
-<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-	<div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
-</div>
-<div class="container-fluid bg-white sticky-top">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-		<a href="index.html" class="navbar-brand"><img class="img-fluid" src="img/logo.png" alt="Logo"/></a>
-		<button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="navbar-nav ms-auto">
-			<a href="index.html" class="nav-item nav-link ">Home</a>
-			<a href="tentang.html" class="nav-item nav-link active">Tentang</a>
-			<a href="dosen.html" class="nav-item nav-link">Dosen</a>
-			<a href="visi-misi.html" class="nav-item nav-link">Visi Misi</a>
-			<a href="kontak.html" class="nav-item nav-link">Kontak</a>
-		</div>
-		<div class="border-start ps-4 d-none d-lg-block">
-			<a href="formulir.html" class="nav-item nav-link menu-pendaftaran" style="color: rgb(12, 80, 13);"><b>PENDAFTARAN</b></a>
-		</div>
-	</div>
-	</nav>
-</div>
-</div>
-<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-<div class="container text-center py-5">
-	<h1 class="display-2 text-dark mb-4 animated slideInDown">Tentang ITS NU Pekalongan</h1>
-	<nav aria-label="breadcrumb animated slideInDown">
-	<ol class="breadcrumb justify-content-center mb-0">
-		<li class="breadcrumb-item">
-			<a href="">ITS</a>
-		</li>
-		<li class="breadcrumb-item">
-			<a href="index.html">Home</a>
-		</li>
-		<li class="breadcrumb-item">
-			<a href="tentang.html">Tentang</a>
-		</li>
-	</ol>
-	</nav>
-</div>
-</div>
-<div class="container-xxl py-5">
-<div class="container">
-	<div class="row g-5">
-		<div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-			<img class="img-fluid" src="img/logo-itsnu.png" alt="" width="67%"/>
-		</div>
-		<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-			<div class="section-title">
-				<h1 class="display-6">Profil</h1>
-			</div>
-			<p class="mb-4" style="text-indent: 0.3in">
-				 ITS NU Pekalongan merupakan perguruan tinggi swasta dibawah naungan yayasan NU di wilayah kabupaten pekalongan. Visi dari ITS NU Pekalongan adalah mendirikan perguruan tinggi unggul dalam menghasilkan lulusan yang menguasai ilmu pengetahuan dan teknologi berakidah Islam Ahlusunnah Wal Jama’ah an-Nahdliyah. ITS NU Pekalongan mempunyai keunggulan tenaga hightech siap kerja, sholeh dan berakhlak baik dengan kurikulum yang terintegrasi.
-			</p>
-		</div>
-	</div>
-	<div class="col-lg-20 wow fadeIn" data-wow-delay="0.5s">
-		<div class="section-title">
-			<h1 class="display-6">Sejarah ITS NU Pekalongan</h1>
-		</div>
-		<p class="mb-4" style="text-indent: 0.5in; text-align: left">
-			 Pengurus Cabang Nahdlatul Ulama (PCNU) Kabupaten Pekalongan sejak dua tahun terakhir sibuk mempersiapkan lembaga pendidikan tinggi berhaluan Ajaran Ahlus Sunnah wal Jama’ah (Aswaja) sebagai tindak lanjut amanat Konferensi Cabang (Konfercab) tahun 2013. Dari hasil konsultasi ke Pengurus Besar Nahdlatul Ulama (PBNU) dan Kementrian Riset Teknologi dan Pendidikan Tinggi (Kemenristek Dikti) serta melihat moratorium Pemerintah tentang perguruan tinggi pada tahun 2017, akhirnya PCNU Kabupaten Pekalongan memilih opsi yakni alih kelola lembaga pendidikan tinggi yang sudah ada untuk dikelola dan dikembangkan menjadi Universitas Nahdatul Ulama.
-		</p>
-		<br/>
-		<p class="mb-4" style="text-indent: 0.5in; text-align: left">
-			 Dikatakan, pilihan alih kelola pendidikan tinggi ternyata prosesnya memakan waktu yang cukup lama. Pasalnya, PCNU harus tahu detail lembaga yang akan dialih kelola seperti manajemen, kondisi mahasiswa, karyawan hingga dosen. Namun demikian, pihak PCNU Kabupaten Pekalongan merasa beruntung karena lembaga pendidikan yang akan dialih kelola ialah milik warga nahdliyyin yakni Politeknik Batik (Polbat) Pusmanu yang bermarkas di Jalan Jenderal Sudirman 29 Pekalongan. Setelah melalui proses yang cukup panjang yang dimulai sejak bulan Pebruari tahun 2017 kemarin, akhirnya Kemenristek Dikti mengeluarkan SK pengalihan pengeloaan Politeknik Pusmanu di Kabupaten Pekalongan dari Yayasan Al Utsmani kepada Perkumpulan Nahdatul Ulama dengan nomor : 636 / KPT / 1 / 2017. PCNU juga mendirikan Institut Teknologi dan Sains Nahdlatul Ulama (ITS NU) Pekalongan. Menteri Riset, Teknologi, dan Pendidikan Tinggi (Menristekdikti) Mohammad Nasir meresmikan Institut Teknologi dan Sains (ITS) Nahdlatul Ulama Kabupaten Pekalongan. Peresmian tersebut menambah adanya perguruan tinggi yang ada di Kota Santri. Diterangkan Ketua PBNU Hanif Saha Ghofur, kampus yang terletak di Kedungwuni tersebut merupakan Perguruan Tinggi (PT) ke 33 di Jateng. Dan sekarang NU memiliki sebanyak 228 PT di seluruh Indonesia.
-		</p>
-		<br/>
-		<p class="mb-4" style="text-indent: 0.5in; text-align: left">
-			 Sementara itu Bupati Pekalongan Asip Kholbihi, mengatakan berdirinya Kampus ITS NU menambah semaraknya dunia pendidikan di Kabupaten Pekalongan. “Kami ingin terus mengembangkan dunia pendidikan, dan hasilnya di Kabupaten Pekalongan terdapat enam Perguruan Tinggi swasta dan tiga Perguruan Tinggi Negeri,” jelasnya. Banyak Perguruan Tinggi diharapkan bisa menggugah para pelajar untuk meneruskan ke jenjang pendidikan yang lebih tinggi. ”Setiap tahun, ada sebanyak 5.000-6.000 yang lulus pendidikan tingkat SMA sederajat di Kabupaten Pekalongan. Namun dari jumlah itu, baru sekitar 1.000-1.500 lulusan SMA, yang melanjutkan pendidikan ke perguruan tinggi. Hadirnya ITS NU Pekalongan ini, diharapkan mampu mendongkrak angka partisipasi perguruan tinggi di Kota Santri,” kata Bupati Pekalongan.
-		</p>
-	</div>
-</div>
-</div>
-<div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-<div class="container py-5">
-	<div class="row g-5">
-		<div class="col-lg-3 col-md-6">
-			<img src="img/its1.png" alt="" srcset="" width="100%"/>
-		</div>
-		<div class="col-lg-3 col-md-6">
-			<h4 class="text-primary mb-4">Kantor Kami</h4>
-			<p class="mb-2">
-				<i class="fa fa-map-marker-alt text-primary me-3"></i>Jl. Karangdowo No.9, Karangdowo, Kec. Kedungwuni, Pekalongan, Jawa Tengah 51173
-			</p>
-			<p class="mb-2">
-				<i class="fa fa-phone-alt text-primary me-3"></i>0821 3859 7168
-			</p>
-			<p class="mb-2">
-				<i class="fa fa-envelope text-primary me-3"></i>info@itsnupekalongan.ac.id​
-			</p>
-			<div class="d-flex pt-3">
-				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.facebook.com/ITSNUPEKAL0NGAN/"><i class="fab fa-facebook-f"></i></a>
-				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.youtube.com/@ITSNUPekalongan"><i class="fab fa-youtube"></i></a>
-				<a class="btn btn-square btn-primary rounded-circle me-2" href="https://www.instagram.com/itsnupekalongan/"><i class="fab fa-instagram"></i></a>
-			</div>
-		</div>
-		<div class="col-lg-2 col-md-6">
-			<h4 class="text-primary mb-4">Quick Links</h4>
-			<a class="btn btn-link" href="index.html">Home</a>
-			<a class="btn btn-link" href="tentang.html">Tentang</a>
-			<a class="btn btn-link" href="dosen.html">Dosen</a>
-			<a class="btn btn-link" href="visi-misi.html">Visi Misi</a>
-			<a class="btn btn-link" href="kontak.html">Kontak</a>
-		</div>
-		<div class="col-lg-3 col-md-6">
-			<h4 class="text-primary mb-4">Maps</h4>
-			<div class="col-lg-3 col-md-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.647043152012!2d109.629498216333!3d-6.960657799042879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1696738395110!5m2!1sid!2sid" width="400" height="200" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-</body>
+      }
+      .menu-pendaftaran:hover {
+        background-color: #45a049; /* Warna latar belakang yang berbeda saat digulirkan */
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
+    </div>
+    <div class="container-fluid bg-white sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+          <a href="index.html" class="navbar-brand"
+            ><img class="img-fluid" src="img/logo.png" alt="Logo"
+          /></a>
+          <button
+            type="button"
+            class="navbar-toggler ms-auto me-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="tentang.html" class="nav-item nav-link active"
+                >Tentang</a
+              >
+              <a href="dosen.html" class="nav-item nav-link">Dosen</a>
+              <a href="visi-misi.html" class="nav-item nav-link">Visi Misi</a>
+              <a href="kontak.html" class="nav-item nav-link">Kontak</a>
+              <a
+                href="formulir.html"
+                class="nav-item nav-link menu-pendaftaran1"
+                style="color: rgb(12, 80, 13)"
+                ><b>PENDAFTARAN</b></a
+              >
+            </div>
+            <div class="border-start ps-4 d-none d-lg-block">
+              <a
+                href="formulir.html"
+                class="nav-item nav-link menu-pendaftaran"
+                style="color: rgb(12, 80, 13)"
+                ><b>PENDAFTARAN</b></a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center py-5">
+        <h1 class="display-2 text-dark mb-4 animated slideInDown">
+          Tentang ITS NU Pekalongan
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item">
+              <a href="">ITS</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="tentang.html">Tentang</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <img
+              class="img-fluid"
+              src="img/logo-itsnu.png"
+              alt=""
+              width="67%"
+            />
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="section-title">
+              <h1 class="display-6">Profil</h1>
+            </div>
+            <p class="mb-4" style="text-indent: 0.3in; text-align: justify">
+              ITS NU Pekalongan merupakan perguruan tinggi swasta dibawah
+              naungan yayasan NU di wilayah kabupaten pekalongan. Visi dari ITS
+              NU Pekalongan adalah mendirikan perguruan tinggi unggul dalam
+              menghasilkan lulusan yang menguasai ilmu pengetahuan dan teknologi
+              berakidah Islam Ahlusunnah Wal Jama’ah an-Nahdliyah. ITS NU
+              Pekalongan mempunyai keunggulan tenaga hightech siap kerja, sholeh
+              dan berakhlak baik dengan kurikulum yang terintegrasi.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="col-lg-20 wow fadeIn" data-wow-delay="0.5s">
+          <div class="section-title">
+            <h1 class="display-6">Sejarah ITS NU Pekalongan</h1>
+          </div>
+          <p class="mb-4" style="text-indent: 0.5in; text-align: justify">
+            Pengurus Cabang Nahdlatul Ulama (PCNU) Kabupaten Pekalongan sejak
+            dua tahun terakhir sibuk mempersiapkan lembaga pendidikan tinggi
+            berhaluan Ajaran Ahlus Sunnah wal Jama’ah (Aswaja) sebagai tindak
+            lanjut amanat Konferensi Cabang (Konfercab) tahun 2013. Dari hasil
+            konsultasi ke Pengurus Besar Nahdlatul Ulama (PBNU) dan Kementrian
+            Riset Teknologi dan Pendidikan Tinggi (Kemenristek Dikti) serta
+            melihat moratorium Pemerintah tentang perguruan tinggi pada tahun
+            2017, akhirnya PCNU Kabupaten Pekalongan memilih opsi yakni alih
+            kelola lembaga pendidikan tinggi yang sudah ada untuk dikelola dan
+            dikembangkan menjadi Universitas Nahdatul Ulama.
+          </p>
+          <br />
+          <p class="mb-4" style="text-indent: 0.5in; text-align: justify">
+            Dikatakan, pilihan alih kelola pendidikan tinggi ternyata prosesnya
+            memakan waktu yang cukup lama. Pasalnya, PCNU harus tahu detail
+            lembaga yang akan dialih kelola seperti manajemen, kondisi
+            mahasiswa, karyawan hingga dosen. Namun demikian, pihak PCNU
+            Kabupaten Pekalongan merasa beruntung karena lembaga pendidikan yang
+            akan dialih kelola ialah milik warga nahdliyyin yakni Politeknik
+            Batik (Polbat) Pusmanu yang bermarkas di Jalan Jenderal Sudirman 29
+            Pekalongan. Setelah melalui proses yang cukup panjang yang dimulai
+            sejak bulan Pebruari tahun 2017 kemarin, akhirnya Kemenristek Dikti
+            mengeluarkan SK pengalihan pengeloaan Politeknik Pusmanu di
+            Kabupaten Pekalongan dari Yayasan Al Utsmani kepada Perkumpulan
+            Nahdatul Ulama dengan nomor : 636 / KPT / 1 / 2017. PCNU juga
+            mendirikan Institut Teknologi dan Sains Nahdlatul Ulama (ITS NU)
+            Pekalongan. Menteri Riset, Teknologi, dan Pendidikan Tinggi
+            (Menristekdikti) Mohammad Nasir meresmikan Institut Teknologi dan
+            Sains (ITS) Nahdlatul Ulama Kabupaten Pekalongan. Peresmian tersebut
+            menambah adanya perguruan tinggi yang ada di Kota Santri.
+            Diterangkan Ketua PBNU Hanif Saha Ghofur, kampus yang terletak di
+            Kedungwuni tersebut merupakan Perguruan Tinggi (PT) ke 33 di Jateng.
+            Dan sekarang NU memiliki sebanyak 228 PT di seluruh Indonesia.
+          </p>
+          <br />
+          <p class="mb-4" style="text-indent: 0.5in; text-align: justify">
+            Sementara itu Bupati Pekalongan Asip Kholbihi, mengatakan berdirinya
+            Kampus ITS NU menambah semaraknya dunia pendidikan di Kabupaten
+            Pekalongan. “Kami ingin terus mengembangkan dunia pendidikan, dan
+            hasilnya di Kabupaten Pekalongan terdapat enam Perguruan Tinggi
+            swasta dan tiga Perguruan Tinggi Negeri,” jelasnya. Banyak Perguruan
+            Tinggi diharapkan bisa menggugah para pelajar untuk meneruskan ke
+            jenjang pendidikan yang lebih tinggi. ”Setiap tahun, ada sebanyak
+            5.000-6.000 yang lulus pendidikan tingkat SMA sederajat di Kabupaten
+            Pekalongan. Namun dari jumlah itu, baru sekitar 1.000-1.500 lulusan
+            SMA, yang melanjutkan pendidikan ke perguruan tinggi. Hadirnya ITS
+            NU Pekalongan ini, diharapkan mampu mendongkrak angka partisipasi
+            perguruan tinggi di Kota Santri,” kata Bupati Pekalongan.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <img src="img/its1.png" alt="" srcset="" width="100%" />
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-primary mb-4">Kantor Kami</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt text-primary me-3"></i>Jl.
+              Karangdowo No.9, Karangdowo, Kec. Kedungwuni, Pekalongan, Jawa
+              Tengah 51173
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt text-primary me-3"></i>0821 3859 7168
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope text-primary me-3"></i
+              >info@itsnupekalongan.ac.id​
+            </p>
+            <div class="d-flex pt-3">
+              <a
+                class="btn btn-square btn-primary rounded-circle me-2"
+                href="https://www.facebook.com/ITSNUPEKAL0NGAN/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary rounded-circle me-2"
+                href="https://www.youtube.com/@ITSNUPekalongan"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-primary rounded-circle me-2"
+                href="https://www.instagram.com/itsnupekalongan/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h4 class="text-primary mb-4">Quick Links</h4>
+            <a class="btn btn-link" href="index.html">Home</a>
+            <a class="btn btn-link" href="tentang.html">Tentang</a>
+            <a class="btn btn-link" href="dosen.html">Dosen</a>
+            <a class="btn btn-link" href="visi-misi.html">Visi Misi</a>
+            <a class="btn btn-link" href="kontak.html">Kontak</a>
+            <a class="btn btn-link" href="formulir.html">Pendaftaran</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-primary mb-4">Maps</h4>
+            <div class="col-lg-3 col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.647043152012!2d109.629498216333!3d-6.960657799042879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1696738395110!5m2!1sid!2sid"
+                width="330"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

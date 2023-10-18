@@ -23,9 +23,23 @@
         padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
         border-radius: 4px; /* Membuat tombol lebih bulat */
       }
+	  .menu-pendaftaran1 {
+        background-color: #4CAF50; /* Warna hijau */
+        color: #fff; /* Warna teks putih */
+        padding: 8px 16px; /* Padding agar tombol terlihat lebih besar */
+        border-radius: 4px; /* Membuat tombol lebih bulat */
+      }
+	  	  /* Sembunyikan tautan PENDAFTARAN pada mode desktop (lebar layar > 992px) */
+@media (min-width: 992px) {
+  .menu-pendaftaran1 {
+    display: none;
+  }
+}
       .menu-pendaftaran:hover {
         background-color: #45a049; /* Warna latar belakang yang berbeda saat digulirkan */
       }
+
+
 </style>
 </head>
 <body>
@@ -46,6 +60,7 @@
 				<a href="dosen.html" class="nav-item nav-link">Dosen</a>
 				<a href="visi-misi.html" class="nav-item nav-link">Visi Misi</a>
 				<a href="kontak.html" class="nav-item nav-link">Kontak</a>
+				<a href="formulir.html" class="nav-item nav-link menu-pendaftaran1" style="color: rgb(12, 80, 13);"><b>PENDAFTARAN</b></a>
 			</div>
 			<div class="border-start ps-4 d-none d-lg-block">
 				<a href="formulir.html" class="nav-item nav-link menu-pendaftaran" style="color: rgb(12, 80, 13);"><b>PENDAFTARAN</b></a>
@@ -82,7 +97,7 @@
 				<div class="section-title">
 					<h1 class="display-6">Profil</h1>
 				</div>
-				<p class="mb-4" style="text-indent: 0.3in;">
+				<p class="mb-4" style="text-indent: 0.3in; text-align: justify">
 					 ITS NU Pekalongan merupakan perguruan tinggi swasta dibawah naungan yayasan NU di wilayah kabupaten pekalongan. Visi dari ITS NU Pekalongan adalah mendirikan perguruan tinggi unggul dalam menghasilkan lulusan yang menguasai ilmu pengetahuan dan teknologi berakidah Islam Ahlusunnah Wal Jama’ah an-Nahdliyah. ITS NU Pekalongan mempunyai keunggulan tenaga hightech siap kerja, sholeh dan berakhlak baik dengan kurikulum yang terintegrasi.
 				</p>
 				<a href="tentang.html" class="btn btn-primary rounded-pill py-3 px-5">Baca Selengkapnya</a>
@@ -140,41 +155,54 @@
 </div>
 </div>
 <div class="container-xxl contact py-5">
-<div class="container">
-	<div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-		<h1 class="display-6">Visi Misi</h1>
-	</div>
-	<div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-		<div class="col-lg-8">
-			<div class="row g-5 mb-5 justify-content-center">
-				<div class="col-md-10 text-center wow fadeInUp" data-wow-delay="0.3s">
-					<h2>Visi</h2>
-					<ul>
-						 Institut Teknologi dan Sains Nahdlatul Ulama menjadi perguruan tinggi yang unggul dalam pengembangan Ilmu Pengetahuan dan Teknologi di bidang usaha kecil dan berakidah Islam Ahlussunnah wal jama’ah An-Nahdliyah
-					</ul>
-				</div>
-				<div class="col-md-20 text-center wow fadeInUp" data-wow-delay="0.5s">
-					<h2>Misi</h2>
-					<ul>
-						<li>
-							Menyelenggarakan pendidikan tinggi yang bermutu, dan berakidah Islam Ahlussunnah Wal Jama’ah An – Nahdliyah
-						</li>
-						<li>
-							Menyelenggarakan penelitian pengabdian kepada masyarakat yang dapat meningkatkan kesejahteraan masyarakat
-						</li>
-						<li>
-							Menyelenggarakan pengelolaan Institut sesuai tuntutan zaman dan yang amanah
-						</li>
-						<li>
-							Menyelenggarakan kerja sama dengan pihak lain yang saling mengguntungkan
-						</li>
-					</ul>
-				</div>
+	<div class="container">
+	  <div
+		class="row justify-content-center wow fadeInUp"
+		data-wow-delay="0.1s"
+	  >
+		<div class="col-lg-10">
+		  <div class="row g-5 mb-5 justify-content-center">
+			<div
+			  class="col-md-10 text-center wow fadeInUp"
+			  data-wow-delay="0.3s"
+			>
+			  <h2>Visi</h2>
+			  <ul>
+				Institut Teknologi dan Sains Nahdlatul Ulama menjadi perguruan
+				tinggi yang unggul dalam pengembangan Ilmu Pengetahuan dan
+				Teknologi di bidang usaha kecil dan berakidah Islam
+				Ahlussunnah wal jama’ah An-Nahdliyah
+			  </ul>
 			</div>
+			<div
+			  class="col-md-20 text-center wow fadeInUp"
+			  data-wow-delay="0.5s"
+			>
+			  <h2>Misi</h2>
+			  <ul>
+				<li>
+				  Menyelenggarakan pendidikan tinggi yang bermutu, dan
+				  berakidah Islam Ahlussunnah Wal Jama’ah An – Nahdliyah
+				</li>
+				<li>
+				  Menyelenggarakan penelitian pengabdian kepada masyarakat
+				  yang dapat meningkatkan kesejahteraan masyarakat
+				</li>
+				<li>
+				  Menyelenggarakan pengelolaan Institut sesuai tuntutan zaman
+				  dan yang amanah
+				</li>
+				<li>
+				  Menyelenggarakan kerja sama dengan pihak lain yang saling
+				  mengguntungkan
+				</li>
+			  </ul>
+			</div>
+		  </div>
 		</div>
+	  </div>
 	</div>
-</div>
-</div>
+  </div>
 <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
 <div class="container py-5">
 	<div class="row g-5">
@@ -203,13 +231,14 @@
 			<a class="btn btn-link" href="index.html">Home</a>
 			<a class="btn btn-link" href="tentang.html">Tentang</a>
 			<a class="btn btn-link" href="dosen.html">Dosen</a>
-			<a class="btn btn-link" href="visimisi.html">Visi Misi</a>
+			<a class="btn btn-link" href="visi-misi.html">Visi Misi</a>
 			<a class="btn btn-link" href="kontak.html">Kontak</a>
+			<a class="btn btn-link" href="formulir.html">Pendaftaran</a>
 		</div>
 		<div class="col-lg-3 col-md-6">
 			<h4 class="text-primary mb-4">Maps</h4>
 			<div class="col-lg-3 col-md-6">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.647043152012!2d109.629498216333!3d-6.960657799042879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1696738395110!5m2!1sid!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15841.647043152012!2d109.629498216333!3d-6.960657799042879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7021b4d2b766bb%3A0x40dacfe03dd23e15!2sITS%20NU%20Pekalongan!5e0!3m2!1sid!2sid!4v1696738395110!5m2!1sid!2sid" width="330" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 				</iframe>
 			</div>
 		</div>
